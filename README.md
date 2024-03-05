@@ -19,23 +19,25 @@ git config --list | grep "user.name"
 git init
 ```
 - .gitという隠しフォルダが生成される(このディレクトリ内での作業が可能になる)
-### リポジトリの指定  
+### リモートリポジトリの指定  
 ```
 git remote add origin <リポジトリのURL>
 ```
-### ブランチを指定  
+### メインブランチを指定  
 ```
 git branch -M main
-git push -u origin main
 ```
 ### アップロードしたいファイル指定
 ```
 git add <ファイル名, ディレクトリ名, -A:全て>
+```
+### アップロードしたいファイルをコミット
+```
 git commit -m "コメント"
 ```
 ### ファイルのアップロード
 ```
-git push -u origin main
+git push -u origin main  // 初回のみ
 git push
 ```
 ### ダウンロード
@@ -51,9 +53,10 @@ git restore <ファイル名, ディレクトリ名>
 git config --global alias.<新たに設定したいコマンド名> <gitコマンド>
 ```
 → ```git <新たに設定したいコマンド名>```を打つと```git <gitコマンド>```が実行される
-### コメント履歴
+### ログの確認
 ```
 git log
+git log - <確認したいログの数>
 ```
 ### ブランチ作成・移動
 ```
