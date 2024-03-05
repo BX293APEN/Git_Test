@@ -70,9 +70,9 @@ git merge --allow-unrelated-histories //履歴の異なるブランチを合成�
 → 自ブランチに<併合したいブランチ>が合成される
 ### ブランチ確認
 ```
-git branch
+git branch -a
 ```
-### ブランチ削除
+### ローカルブランチ削除
 ```
 git branch -d <削除したいブランチ> // 変更をマージした後実行可能
 git branch -D　<過去の変更まで完全削除したいブランチ>
