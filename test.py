@@ -3,4 +3,5 @@ if __name__ == "__main__":
     print("My name is PEN!!")
     print("TestTestTestTest")
     input()
+    input()
 
